@@ -1,0 +1,51 @@
+@mixin text-tiny {
+  font-size: rem($font-size-12);
+  line-height: rem($line-height-18);
+}
+
+@mixin text-xs {
+  font-size: rem($font-size-14);
+  line-height: rem($line-height-21);
+}
+
+@mixin text-base($bold: false) {
+  font-size: rem($font-size-16);
+  line-height: rem($line-height-24);
+
+  @if ($bold == true) {
+    font-weight: $font-weight-bold;
+  }
+}
+
+@mixin text-m($bold: false) {
+  font-size: rem($font-size-18);
+  line-height: rem($line-height-27);
+
+  @if ($bold == true) {
+    font-weight: $font-weight-bold;
+  }
+}
+
+@mixin text-l($bold: false) {
+  font-size: rem($font-size-20);
+  line-height: rem($line-height-30);
+
+  @if ($bold == true) {
+    font-weight: $font-weight-bold;
+  }
+}
+
+@mixin text-xl($bold: false) {
+  font-size: rem($font-size-24);
+  line-height: rem($line-height-34);
+
+  @if ($bold == true) {
+    font-weight: $font-weight-bold;
+  }
+}
+
+@mixin text-title {
+  font-size: rem($font-size-48);
+  font-weight: $font-weight-bold;
+  line-height: rem($line-height-58);
+}
