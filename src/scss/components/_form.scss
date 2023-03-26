@@ -1,0 +1,64 @@
+.form {
+  width: 100%;
+
+  &--search & {
+    &__input {
+      padding-left: rem(56px);
+
+      &-search {
+        all: unset;
+
+        position: absolute;
+        left: rem(20px);
+        top: 50%;
+
+        display: inline-grid;
+        place-content: center;
+
+        transform: translateY(-50%);
+
+        cursor: pointer;
+        
+        &-icon {
+          $icon-size: 18px;
+
+          width: rem($icon-size);
+          height: rem($icon-size);
+        }
+      }
+    }
+  }
+
+  &__wrapper {
+    @include text-l;
+
+    position: relative;
+
+    display: flex;
+    gap: rem($gap-xs);
+
+    color: $clr-text-dimmed;
+  }
+
+  &__input {
+    flex-grow: 1;
+
+    min-width: 0;
+
+    padding-block: rem($gap-xxs);
+    padding-left: rem($gap-xs);
+
+    border: $border-base;
+    border-radius: $border-radius-small;
+    background-color: $white;
+    box-shadow: $box-shadow-base;
+
+    &:focus {
+      outline: rem(2px) solid $raw-sienna;
+    }
+  }
+
+  &__button {
+    flex-shrink: 0;
+  }
+}
