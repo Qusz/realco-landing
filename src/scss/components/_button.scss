@@ -32,6 +32,10 @@
     background-color: $white;
   }
 
+  &--plain {
+    padding: 0;
+  }
+
   &--big {
     font-size: rem($font-size-20);
     line-height: rem($line-height-30);
