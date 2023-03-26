@@ -12,7 +12,7 @@
   font-size: rem($font-size-16);
   line-height: rem($line-height-24);
 
-  @if ($bold == true) {
+  @if ($bold == 'bold') {
     font-weight: $font-weight-bold;
   }
 }
@@ -21,7 +21,7 @@
   font-size: rem($font-size-18);
   line-height: rem($line-height-27);
 
-  @if ($bold == true) {
+  @if ($bold == 'bold') {
     font-weight: $font-weight-bold;
   }
 }
@@ -30,7 +30,7 @@
   font-size: rem($font-size-20);
   line-height: rem($line-height-30);
 
-  @if ($bold == true) {
+  @if ($bold == 'bold') {
     font-weight: $font-weight-bold;
   }
 }
@@ -39,7 +39,7 @@
   font-size: rem($font-size-24);
   line-height: rem($line-height-34);
 
-  @if ($bold == true) {
+  @if ($bold == 'bold') {
     font-weight: $font-weight-bold;
   }
 }
