@@ -1,16 +1,22 @@
 @mixin text-tiny {
   font-size: rem($font-size-12);
   line-height: rem($line-height-18);
+
+  color: $clr-text-default;
 }
 
 @mixin text-xs {
   font-size: rem($font-size-14);
   line-height: rem($line-height-21);
+
+  color: $clr-text-default;
 }
 
 @mixin text-base($bold: false) {
   font-size: rem($font-size-16);
   line-height: rem($line-height-24);
+
+  color: $clr-text-default;
 
   @if ($bold == 'bold') {
     font-weight: $font-weight-bold;
@@ -21,6 +27,8 @@
   font-size: rem($font-size-18);
   line-height: rem($line-height-27);
 
+  color: $clr-text-default;
+
   @if ($bold == 'bold') {
     font-weight: $font-weight-bold;
   }
@@ -29,6 +37,8 @@
 @mixin text-l($bold: false) {
   font-size: rem($font-size-20);
   line-height: rem($line-height-30);
+
+  color: $clr-text-default;
 
   @if ($bold == 'bold') {
     font-weight: $font-weight-bold;
@@ -39,6 +49,8 @@
   font-size: rem($font-size-24);
   line-height: rem($line-height-34);
 
+  color: $clr-text-default;
+
   @if ($bold == 'bold') {
     font-weight: $font-weight-bold;
   }
@@ -48,6 +60,8 @@
   font-size: rem($font-size-48);
   font-weight: $font-weight-bold;
   line-height: rem($line-height-58);
+
+  color: $clr-text-default;
 }
 
 @mixin single-line-truncate {
