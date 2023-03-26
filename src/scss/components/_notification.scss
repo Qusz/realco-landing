@@ -1,0 +1,54 @@
+.notification {
+  width: 100%;
+
+  background-color: $gurkha;
+  position: relative;
+  
+  &::before {
+    position: absolute;
+    inset: 0;
+    background-color: inherit; 
+    z-index: $z-index-underlay; 
+
+    margin-left: -100vw;
+    margin-right: -100vw;
+
+    content: "";
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    padding-block: rem($gap-xxs);
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__content {
+    @include text-xs;
+
+    flex-grow: 1;
+
+    margin: 0;
+
+    text-align: center;
+    color: $white;
+  }
+
+  &__close {
+    all: unset;
+
+    cursor: pointer;
+
+    &-icon {
+      $icon-size: 14px;
+
+      width: rem($icon-size);
+      height: rem($icon-size);
+  
+      color: $white;
+    }
+  }
+}
