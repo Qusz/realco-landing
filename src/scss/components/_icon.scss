@@ -1,0 +1,34 @@
+.icon {
+  border-radius: rem(8px);
+
+  &--white {
+    background-color: $white;
+  }
+
+  &--white & {
+    &__image {
+      color: $storm-dust;
+    }
+  }
+
+  &--linen {
+    background-color: $linen;
+  }
+
+  &--linen & {
+    &__image {
+      color: $raw-sienna;
+    }
+  }
+
+  &__wrapper {
+    padding: rem(7px) rem(9px);
+  }
+
+  &__image {
+    $icon-size: 30px;
+
+    width: rem($icon-size);
+    height: rem($icon-size);
+  }
+}
