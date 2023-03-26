@@ -1,0 +1,19 @@
+.pill {
+  @include text-xs;
+
+  border-radius: rem(32px);
+  color: $clr-text-default;
+  background-color: $cararra;
+
+  &--linen {
+    background-color: $linen;
+  }
+
+  &__wrapper {
+    padding: rem(4px) rem(12px);
+  }
+
+  &__text {
+    margin: 0;
+  }
+}
