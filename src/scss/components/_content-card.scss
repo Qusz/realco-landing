@@ -1,0 +1,45 @@
+.content-card {
+  max-width: rem(520px);
+
+  &--big & {
+    &__title {
+      font-size: rem($font-size-56);
+      line-height: rem($line-height-67);
+    }
+
+    &__content {
+      @include text-l;
+    }
+  }
+
+  &--centered {
+    max-width: rem(754px);
+
+    text-align: center;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: rem($gap-m);
+  }
+
+  &__pill {
+    align-self: flex-start
+  }
+  
+  &__title {
+    @include text-title;
+    @include multiline-text-truncate(3);
+
+    margin: 0;
+  }
+
+  &__content {
+    @include text-m;
+    @include multiline-text-truncate(7);
+
+    margin: 0;
+  }
+}
+
