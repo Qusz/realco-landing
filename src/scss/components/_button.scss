@@ -1,0 +1,57 @@
+.button {
+  all: unset;
+
+  font-size: rem($font-size-16);
+  line-height: rem($line-height-24);
+
+  padding: rem($gap-xxs) rem($gap-s);
+
+  cursor: pointer;
+  transition: opacity $default-transition-duration $default-transiton-type;
+
+  border-radius: $border-radius-small;
+
+  &:hover {
+    opacity: .8;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+
+  &--sienna {
+    border: rem(1px) solid $raw-sienna;
+    color: $clr-text-white;
+    background-color: $raw-sienna;
+  }
+
+  &--white {
+    border: $border-base;
+    box-shadow: $box-shadow-base;
+    color: $clr-text-default;
+    background-color: $white;
+  }
+
+  &--big {
+    font-size: rem($font-size-20);
+    line-height: rem($line-height-30);
+  }
+
+  &--icon {
+    display: flex;
+    align-items: center;
+    gap: rem(5px);
+  }
+
+  &__icon {
+    flex-shrink: 0;
+
+    width: rem(20px);
+    height: rem(20px);
+
+    &--small {
+      width: rem(10px);
+      height: rem(10px);
+    }
+  }
+}
