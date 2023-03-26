@@ -1,0 +1,24 @@
+.link-card {
+  position: relative;
+
+  border: $border-base;
+  border-radius: $border-radius-big;
+  background-color: $white;
+  box-shadow: $box-shadow-base;
+
+  &__wrapper {
+    padding: rem($gap-base);
+  }
+
+  &__title {
+    @include text-l('bold');
+
+    margin: 0;
+  }
+
+  &__link {
+    @include text-base;
+
+    margin-top: $gap-xxs;
+  }
+}
