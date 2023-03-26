@@ -1,0 +1,36 @@
+.user {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: rem($gap-s);
+  }
+
+  &__userpic {
+    overflow: hidden;
+
+    width: rem(48px);
+    height: rem(48px);
+
+    border-radius: 50%;
+
+    &-image {
+      max-width: 100%;
+    }
+  }
+
+  &__name {
+    @include text-base('bold');
+
+    margin: 0;
+
+    color: $clr-text-default;
+  }
+
+  &__title {
+    @include text-base;
+    
+    margin: 0;
+
+    color: $clr-text-dimmed;
+  }
+}
