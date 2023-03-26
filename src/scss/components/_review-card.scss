@@ -1,0 +1,38 @@
+.review-card {
+  max-width: rem(405px);
+
+  border: $border-base;
+  border-radius: $border-radius-big;
+  box-shadow: $box-shadow-base;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: rem($gap-base);
+
+    padding: rem($gap-base);
+  }
+
+  &__stars {
+    display: flex;
+    gap: rem(4px);
+  }
+
+  &__star {
+    $icon-size: 20px;
+
+    width: rem($icon-size);
+    height: rem($icon-size);
+
+    color: $raw-sienna;
+  }
+
+  &__review {
+    @include text-m;
+    @include multiline-text-truncate(7);
+
+    margin: 0;
+
+    color: $clr-text-default;
+  }
+}
