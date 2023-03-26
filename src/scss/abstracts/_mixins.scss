@@ -64,3 +64,10 @@
   -webkit-box-orient: vertical;
   white-space: normal;
 }
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
