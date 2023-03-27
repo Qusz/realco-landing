@@ -19,6 +19,8 @@
   &__brand-logo {
     $icon-size: 32px;
 
+    flex-shrink: 0;
+
     width: rem($icon-size);
     height: rem($icon-size);
     
