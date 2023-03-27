@@ -9,6 +9,7 @@
   cursor: pointer;
   transition: opacity $default-transition-duration $default-transiton-type;
 
+  text-align: center;
   border-radius: $border-radius-small;
 
   &:hover {
