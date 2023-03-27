@@ -3,4 +3,8 @@
   max-width: rem(calc($container-width + 2 * $container-horizontal-padding));
   margin: 0 auto;
   padding-inline: rem($container-horizontal-padding);
+
+  &--fluid {
+    padding-inline: 0;
+  }
 }
