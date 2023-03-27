@@ -9,7 +9,6 @@
     "moduleResolution": "node",
     "target": "ES2021",
     "allowJs": true,
-    "skipLibCheck": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
@@ -25,6 +24,12 @@
       ],
       "assets/*": [
         "./src/assets/*"
+      ],
+      "types/*": [
+        "./src/js/types/*"
+      ],
+      "modules/*": [
+        "./src/js/modules/*"
       ]
     }
   },
