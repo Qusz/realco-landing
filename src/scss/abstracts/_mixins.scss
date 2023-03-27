@@ -89,4 +89,5 @@
 @mixin full-bleed {
   width: 100vw;
   margin-left: calc(50% - 50vw);
+  padding-inline: rem($container-horizontal-padding);
 }
