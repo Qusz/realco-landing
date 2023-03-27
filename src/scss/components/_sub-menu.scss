@@ -1,7 +1,8 @@
 .sub-menu {
   &__title {
     @include text-base;
-
+    font-weight: $font-weight-regular;
+    
     margin: 0;
   }
 
