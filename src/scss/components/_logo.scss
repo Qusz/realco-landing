@@ -1,0 +1,27 @@
+.logo {
+  all: unset;
+
+  cursor: pointer;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: rem($gap-xxs);
+  }
+
+  &__brand {
+    width: rem(62px);
+    height: rem(15px);
+    
+    color: $rangitoto;
+  }
+
+  &__brand-logo {
+    $icon-size: 32px;
+
+    width: rem($icon-size);
+    height: rem($icon-size);
+    
+    color: $raw-sienna;
+  }
+}
