@@ -1,0 +1,72 @@
+.main-page {
+  background-color: $cararra-alt;
+
+  &__hero {
+    &-shape {
+      position: absolute;
+      z-index: $z-index-underlay;
+
+      @media #{$screen-tablet} {
+        display: none;
+      }
+
+      &--bottom {
+        bottom: 0;
+        right: 0;
+        transform: rotate(180deg);
+      }
+    }
+
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+      
+      @media #{$screen-tablet} {
+        gap: rem($gap-s);
+      }
+
+      @media #{$screen-mobile} {
+        flex-direction: column-reverse;
+      }
+    }
+
+    &-card {
+      position: relative;
+
+      display: flex;
+      flex: auto 1 1;
+
+      @media #{$screen-tablet} {
+        padding-block: rem($gap-s);
+      }
+
+      &-wrapper {
+        display: inline-grid;
+        place-content: center;
+
+        width: 100%;
+        
+        @media #{$screen-tablet} {
+          padding-left: rem($container-horizontal-padding);
+        }
+
+        @media #{$screen-mobile} {
+          padding-inline: rem($container-horizontal-padding);
+        }
+      }
+
+      &-search {
+        margin-top: rem($gap-s);
+      }
+    }
+
+    &-image-container {
+      max-width: rem(720px);
+      flex-shrink: 3;
+
+      @media #{$screen-tablet} {
+        max-width: rem(480px);
+      }
+    }
+  }
+}
