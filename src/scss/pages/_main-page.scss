@@ -1,6 +1,8 @@
 .main-page {
   background-color: $cararra-alt;
 
+  // TODO center hero pic on mobile
+
   &__hero {
     &-shape {
       position: absolute;
@@ -67,6 +69,56 @@
       @media #{$screen-tablet} {
         max-width: rem(480px);
       }
+    }
+  }
+
+  &__how {
+    &-wrapper {
+      padding-block: rem($gap-l);
+    }
+
+    &-title-bar {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: rem($gap-m);
+
+      @media #{$screen-tablet} {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      &-caption {
+        @include text-m;
+
+        max-width: rem(243px);
+        margin: 0;
+
+        @media #{$screen-tablet} {
+          max-width: revert;
+
+          text-align: center;
+        }
+      }
+
+      &-logos {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: rem($gap-base);
+      }
+
+      &-logo {
+        max-width: rem(120px);
+      }
+    }
+
+    &-caption {
+      margin: rem(120px) auto 0 auto;
+    }
+
+    &-cards {
+      margin-top: rem($gap-l);
     }
   }
 }
