@@ -1,8 +1,6 @@
 .main-page {
   background-color: $cararra-alt;
 
-  // TODO center hero pic on mobile
-
   &__hero {
     &-shape {
       position: absolute;
@@ -67,6 +65,8 @@
       flex-shrink: 3;
 
       @media #{$screen-tablet} {
+        align-self: center;
+        
         max-width: rem(480px);
       }
     }
