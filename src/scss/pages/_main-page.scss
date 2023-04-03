@@ -66,7 +66,7 @@
 
       @media #{$screen-tablet} {
         align-self: center;
-        
+
         max-width: rem(480px);
       }
     }
@@ -119,6 +119,63 @@
 
     &-cards {
       margin-top: rem($gap-l);
+    }
+  }
+
+  &__benefits {
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: rem(128px);
+
+      padding-block: rem($gap-l);
+    }
+
+    &-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: rem($gap-base);
+
+      @media #{$screen-tablet} {
+        flex-direction: column-reverse;
+      }
+    }
+
+    &-row--reverse & {
+      &-col {
+        &:last-child {
+          order: -1;
+
+          @media #{$screen-tablet} {
+            order: revert;
+          }
+        }
+      }
+    }
+
+    &-buttons {
+      display: flex;
+      gap: rem($gap-s);
+      
+      margin-top: rem($gap-m);
+
+      @media #{$screen-tablet} {
+        flex-direction: column;
+      }
+    }
+
+    &-features {
+      display: flex;
+      justify-content: space-between;
+      gap: rem($gap-s);
+
+
+      margin-top: rem($gap-base);
+
+      @media #{$screen-tablet} {
+        flex-direction: column;
+      }
     }
   }
 }
