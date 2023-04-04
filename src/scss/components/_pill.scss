@@ -1,6 +1,8 @@
 .pill {
   @include text-xs;
 
+  display: inline-block;
+
   border-radius: rem(32px);
   background-color: $cararra;
 
