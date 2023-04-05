@@ -273,4 +273,15 @@
       }
     }
   }
+
+  &__testimonial {
+    &-wrapper {
+      padding-top: rem(389px);
+      padding-bottom: rem(160px);
+    }
+
+    &-cards {
+      margin-top: rem($gap-xl);
+    }
+  }
 }
