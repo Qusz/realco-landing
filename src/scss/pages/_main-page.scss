@@ -243,4 +243,34 @@
       }
     }
   }
+
+  &__locations {
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+
+      padding-bottom: rem(361px);
+    }
+
+    &-header {
+      margin: 0 auto;
+    }
+
+    &-cards {
+      margin-top: rem($gap-l);
+    }
+
+    &-buttons {
+      //! Temp
+      display: flex;
+      align-self: center;
+      gap: rem(24px);
+
+      margin-top: rem($gap-xl);
+
+      @media #{$screen-mobile} {
+        flex-direction: column;
+      }
+    }
+  }
 }
