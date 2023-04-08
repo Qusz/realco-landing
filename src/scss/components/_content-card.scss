@@ -19,9 +19,25 @@
   }
 
   &--centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     max-width: rem(754px);
 
     text-align: center;
+  }
+
+  &--link {
+    max-width: revert;
+  }
+
+  &--link & {
+    &__content {
+      &-text {
+        max-width: rem(710px);
+      }
+    }
   }
 
   &__wrapper {
@@ -42,10 +58,22 @@
   }
 
   &__content {
-    @include text-m;
-    @include multiline-text-truncate(7);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: rem($gap-s);
 
-    margin: 0;
+
+    &-text {
+      @include text-m;
+      @include multiline-text-truncate(7);
+  
+      margin: 0;
+    }
+
+    &-button {
+      flex-shrink: 0;
+    }
   }
 }
 
