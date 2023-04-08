@@ -48,6 +48,10 @@
     gap: rem(5px);
   }
 
+  &--bold {
+    font-weight: $font-weight-bold;
+  }
+
   &__icon {
     flex-shrink: 0;
 
