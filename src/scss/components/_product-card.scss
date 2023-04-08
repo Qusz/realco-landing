@@ -9,6 +9,40 @@
   border-radius: 0 0 rem(12px) rem(12px);
   box-shadow: $box-shadow-base;
 
+  background-color: $white;
+
+  &--post & {
+    &__header {
+      display: flex;
+      align-items: center;
+      gap: rem($gap-xs);
+    }
+
+    &__date {
+      @include text-xs;
+
+      margin: 0;
+
+      color: $clr-text-dimmed;
+    }
+
+    &__title {
+      margin-top: rem($gap-s);
+    }
+
+    &__desc {
+      @include text-base;
+
+      margin: rem($gap-xxs) 0 0 0;
+
+      color: $clr-text-dimmed;
+    }
+
+    &__button {
+      margin-top: rem($gap-base);
+    }
+  }
+
   &__link {
     position: absolute;
     inset: 0;
