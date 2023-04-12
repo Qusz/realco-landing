@@ -5,10 +5,11 @@
 
   &__wrapper {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: rem($gap);
 
-    @media #{$screen-tablet} {
+    @media #{$screen-mobile} {
       justify-content: center;
     }
   }
@@ -19,7 +20,6 @@
 
     @media #{$screen-tablet} {
       flex-basis: calc(percentage(1 / 2) - rem($gap));
-      justify-content: center;
     }
 
     @media #{$screen-mobile} {
@@ -28,7 +28,7 @@
     }
 
     & > * {
-      width: 100%;
+      flex-grow: 1;
     }
   }
 }
