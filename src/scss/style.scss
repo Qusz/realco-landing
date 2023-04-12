@@ -16,6 +16,24 @@
 /**
 * Components
 */
+@import 'components/container';
+@import 'components/button';
+@import 'components/pill';
+@import 'components/icon';
+@import 'components/user';
+@import 'components/content-card';
+@import 'components/info-card';
+@import 'components/product-card';
+@import 'components/link-card';
+@import 'components/img-card';
+@import 'components/review-card';
+@import 'components/sub-menu';
+@import 'components/form';
+@import 'components/notification';
+@import 'components/logo';
+@import 'components/card-grid';
+@import 'components/navbar';
+@import 'components/footer';
 
 
 
@@ -29,3 +47,4 @@
 /**
 * Pages
 */
+@import 'pages/main-page';
