@@ -31,6 +31,7 @@
 
     &__desc {
       @include text-base;
+      @include multiline-text-truncate(6);
 
       margin: rem($gap-xxs) 0 0 0;
 
