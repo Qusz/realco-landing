@@ -1,5 +1,5 @@
 .main-page {
-  // background-color: $cararra-alt;
+  background-color: $cararra-alt;
 
   &__hero {
     &-shape {
@@ -73,6 +73,8 @@
   }
 
   &__how {
+    background-color: $white;
+
     &-wrapper {
       padding-block: rem($gap-l);
     }
@@ -123,6 +125,8 @@
   }
 
   &__benefits {
+    background-color: $white;
+
     &-wrapper {
       display: flex;
       flex-direction: column;
@@ -275,7 +279,7 @@
   }
 
   &__testimonial {
-    background-color: $cararra-alt;
+    background-color: $white;
 
     &-wrapper {
       padding-top: rem(157px);
@@ -362,6 +366,16 @@
 
     &-button {
       margin-top: rem($gap-s);
+    }
+  }
+
+  &__posts {
+    &-wrapper {
+      padding-block: rem(128px);
+    }
+
+    &-cards {
+      margin-top: rem($gap-xl);
     }
   }
 }
