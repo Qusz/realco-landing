@@ -13,7 +13,7 @@
 
     &__content {
       @media #{$screen-mobile} {
-        @include text-m; 
+        @include text-m;        
       }
     }
   }
@@ -52,9 +52,13 @@
   
   &__title {
     @include text-title;
-    @include multiline-text-truncate(3);
+    @include multiline-text-truncate(4);
 
     margin: 0;
+
+    @media #{$screen-mobile} {
+      text-align: center;
+    }
   }
 
   &__content {
@@ -63,6 +67,9 @@
     align-items: flex-start;
     gap: rem($gap-s);
 
+    @media #{$screen-mobile} {
+      text-align: center;
+    }
 
     &-text {
       @include text-m;
