@@ -77,6 +77,10 @@
 
     &-wrapper {
       padding-block: rem($gap-l);
+
+      @media #{$screen-mobile} {
+        padding-block: rem($gap-s);
+      }
     }
 
     &-title-bar {
@@ -133,6 +137,12 @@
       gap: rem(128px);
 
       padding-block: rem($gap-l);
+
+      @media #{$screen-mobile} {
+        gap: rem($gap-l);
+
+        padding-block: rem($gap-s);
+      }
     }
 
     &-row {
@@ -235,6 +245,10 @@
       flex-direction: column;
 
       padding-bottom: rem(128px);
+
+      @media #{$screen-mobile} {
+        padding-block: rem($gap-l);
+      }
     }
 
     &-header {
@@ -244,6 +258,10 @@
     &-cards {
       margin-top: rem($gap-l);
       margin-bottom: rem($gap-xl);
+
+      @media #{$screen-mobile} {
+        margin-bottom: rem($gap-m);
+      }
     }
   }
 
@@ -253,6 +271,10 @@
     &-wrapper {
       padding-top: rem(157px);
       padding-bottom: rem(160px);
+
+      @media #{$screen-mobile} {
+        padding-block: rem($gap-l);
+      }
     }
 
     &-cards {
@@ -341,6 +363,10 @@
   &__posts {
     &-wrapper {
       padding-block: rem(128px);
+
+      @media #{$screen-mobile} {
+        padding-block: rem($gap-l);
+      }
     }
 
     &-cards {
