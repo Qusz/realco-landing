@@ -178,9 +178,9 @@
   }
 
   &__listings {
-    &-wrapper {
-      position: relative;
+    position: relative;
 
+    &-wrapper {
       display: flex;
       flex-direction: column;
 
@@ -212,15 +212,16 @@
       position: absolute;
       z-index: $z-index-underlay;
 
+      // 5px offet due to element rotation
       &--top {
-        top: 0;
+        top: rem(-5px);
         right: 0;
 
         transform: rotate(90deg);
       }
 
       &--bottom {
-        // 5px offet due to element rotation
+        left: 0;
         bottom: rem(-5px);
 
         transform: rotate(270deg);
