@@ -8,6 +8,7 @@ $rangitoto: #2A2C1F;
 $cararra: #E7E8E3;
 $storm-dust: #65665C;
 $linen: #FAE8E1;
+$cararra-alt: #F5F5F2;
 
 $clr-text-default: $rangitoto;
 $clr-text-dimmed: $storm-dust;
@@ -107,3 +108,6 @@ $box-shadow-base: rem(0px) rem(2px) rem(4px) rgba(0, 0, 0, 0.08);
 /**
 * Z-index
 */
+$z-index-card-overlay: 5;
+$z-index-underlay: -1;
+$z-index-mobile-menu: 90;
