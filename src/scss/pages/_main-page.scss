@@ -158,15 +158,8 @@
       }
     }
 
-    &-buttons {
-      display: flex;
-      gap: rem($gap-s);
-      
-      margin-top: rem($gap-m);
-
-      @media #{$screen-tablet} {
-        flex-direction: column;
-      }
+    &-card {
+      margin-bottom: rem($gap-m);
     }
 
     &-features {
@@ -176,6 +169,7 @@
 
 
       margin-top: rem($gap-base);
+      margin-bottom: rem($gap-m);
 
       @media #{$screen-tablet} {
         flex-direction: column;
@@ -184,7 +178,6 @@
   }
 
   &__listings {
-
     &-wrapper {
       position: relative;
 
@@ -212,20 +205,7 @@
     }
 
     &-content {
-      margin-top: rem($gap-xl);
-    }
-
-    &-buttons {
-      //! Temp
-      display: flex;
-      align-self: center;
-      gap: rem(24px);
-
-      margin-top: rem($gap-xl);
-
-      @media #{$screen-mobile} {
-        flex-direction: column;
-      }
+      margin-block: rem($gap-xl);
     }
 
     &-shape {
@@ -262,19 +242,7 @@
 
     &-cards {
       margin-top: rem($gap-l);
-    }
-
-    &-buttons {
-      //! Temp
-      display: flex;
-      align-self: center;
-      gap: rem(24px);
-
-      margin-top: rem($gap-xl);
-
-      @media #{$screen-mobile} {
-        flex-direction: column;
-      }
+      margin-bottom: rem($gap-xl);
     }
   }
 
