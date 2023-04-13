@@ -1,0 +1,9 @@
+.buttons-pair {
+  display: flex;
+  align-self: center;
+  gap: rem(24px);
+
+  @media #{$screen-mobile} {
+    flex-direction: column;
+  }
+}
