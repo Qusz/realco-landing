@@ -25,6 +25,11 @@ export default defineConfig({
   css: {
     postcss: {
       plugins: [autoprefixer()]
+    },
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@use 'sass:math';`
+      }
     }
   },
   build: {
