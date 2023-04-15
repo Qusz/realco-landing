@@ -1,9 +1,14 @@
-import { navbarElements, isNavbarElements } from 'modules/elements-selector';
+import { getNavbarElements } from './elements-selector';
+
+import TypeGuard from './type-guards';
 
 export default function (): void {
+  const navbarElements = getNavbarElements();
+  const typeGuard = new TypeGuard();
+
   const activeClass = 'navbar--mobile';
 
-  if (!isNavbarElements(navbarElements)) {
+  if (!typeGuard.isNavbarElements(navbarElements)) {
     console.log('HTML elements missing from DOM');
     return;
 
