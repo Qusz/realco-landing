@@ -37,7 +37,7 @@
 
     &-col {
       @media #{$screen-mobile} {
-        flex-basis: calc(percentage(1 / 2) - rem($gap));
+        flex-basis: calc(percentage(math.div(1, 2)) - rem($gap));
       }
     }
   }
