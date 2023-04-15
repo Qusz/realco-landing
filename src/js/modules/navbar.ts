@@ -1,4 +1,5 @@
 import blockScrollY from 'utils/block-scrollY';
+import showAlert from 'utils/show-alert';
 import ElementsSelector from './elements-selector';
 
 import TypeGuard from './type-guards';
@@ -11,10 +12,8 @@ export default function (): void {
   const activeClass = 'navbar--mobile';
 
   if (!typeGuard.isNavbarElements(navbarElements)) {
-    console.log('HTML elements missing from DOM');
+    showAlert('UNEXPECTED ERROR: Some HTML elements missing from DOM');
     return;
-
-    // TODO Add proper error handling
   }
 
   navbarElements.mobileMenuToggle.addEventListener('click', () => {
