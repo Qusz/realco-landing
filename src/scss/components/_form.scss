@@ -3,11 +3,15 @@
 
   &--mobile-wrap & {
     &__wrapper {
-      flex-wrap: wrap;
+      @media #{$screen-mobile} {
+        flex-wrap: wrap;
+      }
     }
 
     &__button {
-      flex-grow: 1;
+      @media #{$screen-mobile} {
+        flex-grow: 1;
+      }
     }
   }
 
