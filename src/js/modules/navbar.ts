@@ -1,3 +1,4 @@
+import blockScrollY from 'utils/block-scrollY';
 import { getNavbarElements } from './elements-selector';
 
 import TypeGuard from './type-guards';
@@ -16,15 +17,8 @@ export default function (): void {
   }
 
   navbarElements.mobileMenuToggle.addEventListener('click', () => {
-    const { body } = document;
-
     navbarElements.navbar.classList.toggle(activeClass);
 
-    // Prevents scroll when mobile menu is open
-    if (body.style.overflowY === 'hidden') {
-      body.style.overflowY = '';
-    } else {
-      body.style.overflowY = 'hidden';
-    }
+    blockScrollY();
   });
 }
