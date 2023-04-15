@@ -7,14 +7,10 @@
   padding: rem($gap-xxs) rem($gap-s);
 
   cursor: pointer;
-  transition: opacity $default-transition-duration $default-transiton-type;
+  transition: all $default-transition-duration $default-transiton-type;
 
   text-align: center;
   border-radius: $border-radius-small;
-
-  &:hover {
-    opacity: .8;
-  }
 
   &:active {
     opacity: 1;
@@ -24,17 +20,57 @@
     border: rem(1px) solid $raw-sienna;
     color: $clr-text-white;
     background-color: $raw-sienna;
+
+    &:hover {
+      opacity: .85;
+    }
+
+    &:active {
+      opacity: 1;
+    }
   }
 
   &--white {
+    position: relative;
+
     border: $border-base;
     box-shadow: $box-shadow-base;
     background-color: $white;
+
+    &::before {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+
+      content: "";
+      transition: all $default-transition-duration $default-transiton-type;
+
+      opacity: 0;
+      border-radius: $border-radius-small;
+      box-shadow: rem(0px) rem(5px) rem(8px) rgba(0, 0, 0, 0.2);
+    }
+
+    &:hover {
+      &::before {
+        opacity: 1;
+      }
+    }
+
+    &:active {
+      &::before {
+        opacity: 0;
+      }
+    }
   }
 
   &--plain {
     padding: 0;
     justify-content: center;
+
+    &:hover {
+      color: $raw-sienna;
+    }
   }
 
   &--big {
