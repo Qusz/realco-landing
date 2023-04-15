@@ -47,7 +47,11 @@
   }
 
   &__pill {
-    align-self: flex-start
+    align-self: flex-start;
+
+    @media #{$screen-mobile} {
+      align-self: center;
+    }
   }
   
   &__title {
