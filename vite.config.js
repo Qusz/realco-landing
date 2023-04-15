@@ -18,7 +18,8 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
       'assets': fileURLToPath(new URL('./src/assets', import.meta.url)),
       'modules': fileURLToPath(new URL('./src/js/modules', import.meta.url)),
-      'types': fileURLToPath(new URL('./src/js/types', import.meta.url))
+      'types': fileURLToPath(new URL('./src/js/types', import.meta.url)),
+      'utils': fileURLToPath(new URL('./src/js/utils', import.meta.url))
     }
   },
   css: {

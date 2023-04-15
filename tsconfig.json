@@ -30,6 +30,9 @@
       ],
       "modules/*": [
         "./src/js/modules/*"
+      ],
+      "utils/*": [
+        "./src/js/utils/*"
       ]
     }
   },

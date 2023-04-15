@@ -42,7 +42,8 @@
           "@": "./src",
           "assets": "./src/assets",
           "types": "./src/js/types",
-          "modules": "./src/js/modules"
+          "modules": "./src/js/modules",
+          "utils": "./src/js/utils"
         },
         "extensions": [".js", ".jsx", ".ts", ".tsx"]
       }
