@@ -1,32 +1,17 @@
-import { GuaranteedElements } from 'types/types';
-import { isHTMLElement, isHTMLButtonElement } from 'types/html-type-predicates';
+import { NavbarElements, NotificationElements } from '@/js/types';
 
-/**
- * Types
- */
-interface NavbarElements {
-  navbar: HTMLElement | null;
-  mobileMenuToggle: HTMLButtonElement | null;
+export default class ElementsSelector {
+  getNavbarElements(): NavbarElements {
+    return {
+      navbar: document.querySelector('[data-navbar]'),
+      mobileMenuToggle: document.querySelector('[data-mobile-menu-toggle]')
+    };
+  }
+
+  getNotificationElements(): NotificationElements {
+    return {
+      notification: document.querySelector('[data-notification]'),
+      closeButton: document.querySelector('[data-notification-close]')
+    };
+  }
 }
-
-/**
- * Type guard functions
- */
-function isNavbarElements(
-  elements: NavbarElements | GuaranteedElements<NavbarElements>
-): elements is GuaranteedElements<NavbarElements> {
-  return (
-    isHTMLElement(elements.navbar) &&
-    isHTMLButtonElement(elements.mobileMenuToggle)
-  );
-}
-
-/**
- * Elements
- */
-const navbarElements: NavbarElements = {
-  navbar: document.querySelector('[data-navbar]'),
-  mobileMenuToggle: document.querySelector('[mobile-menu-toggle]')
-};
-
-export { navbarElements, isNavbarElements };
