@@ -1,16 +1,1338 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./src/assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./src/assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./src/assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./src/assets/favicon/site.webmanifest" />
+    <title>Realco</title>
+  </head>
+  <body class="main-page default-view">
+    <div class="notification" data-notification>
+      <div class="notification__wrapper container">
+        <p class="notification__content">Get your dream house in a week.</p>
+        <button
+          type="button"
+          class="notification__close"
+          data-notification-close
+        >
+          <svg class="notification__close-icon">
+            <use xlink:href="/sprite.svg#icon-cross"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
 
+    <header class="default-view__header header">
+      <nav class="navbar" data-navbar>
+        <div class="navbar__wrapper container">
+          <div class="navbar__logo">
+            <a href="#" class="logo">
+              <div class="logo__wrapper">
+                <svg class="logo__brand-logo">
+                  <use xlink:href="/sprite.svg#icon-brand-logo"></use>
+                </svg>
+                <svg class="logo__brand">
+                  <use xlink:href="/sprite.svg#icon-brand"></use>
+                </svg>
+              </div>
+            </a>
+          </div>
 
+          <button type="button" class="navbar__hamburger" data-mobile-menu-toggle>
+            <svg class="navbar__hamburger-icon">
+              <use xlink:href="/sprite.svg#icon-hamburger"></use>
+            </svg>
+          </button>
 
+          <div class="navbar__items">
+            <ul class="navbar__items-list">
+              <li class="navbar__item">
+                <a class="navbar__item-link" href="#">Home</a>
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__item-link" href="#">Properties</a>
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__item-link" href="#">About</a>
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__item-link" href="#">Contact</a>
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__item-link" href="#">
+                  <svg class="navbar__item-icon">
+                    <use xlink:href="/sprite.svg#icon-search"></use>
+                  </svg>
+                  <span>Search</span>
+                </a>
+              </li>
+            </ul>
+            <div class="navbar__buttons">
+              <a href="#" class="button button--white button--icon">
+                <svg class="navbar__button button__icon">
+                  <use xlink:href="/sprite.svg#icon-shopping-bag"></use>
+                </svg>
+                <span>Cart</span>
+              </a>
+              <a class="navbar__button button button--sienna" href="#"
+                >Find property</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-  <script type="module" src="./src/js/main.ts"></script>
-</body>
+    <div class="default-view__content">
+      <section class="main-page__hero">
+        <div class="main-page__hero-wrapper">
+          <article class="main-page__hero-card">
+            <img
+              src="./src/assets/images/bg-shape-1.png"
+              alt="background shape"
+              class="main-page__hero-shape main-page__hero-shape--top"
+            />
+            <img
+              src="./src/assets/images/bg-shape-1.png"
+              alt="background shape"
+              class="main-page__hero-shape main-page__hero-shape--bottom"
+            />
+            <div class="main-page__hero-card-wrapper">
+              <div class="content-card content-card--big">
+                <div class="content-card__wrapper">
+                  <div class="content-card__pill pill">
+                    <div class="pill__wrapper">
+                      <p class="pill__text">Comfort first</p>
+                    </div>
+                  </div>
+                  <h2 class="content-card__title">
+                    Find house for your family in minutes
+                  </h2>
+                  <div class="content-card__content">
+                    <p class="content-card__content-text">
+                      Aenean sodales mauris quis tellus facilisis, vel mattis
+                      magna. Interdum curabitur eget aliquam elit in mauris
+                      purus.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <form
+                class="main-page__hero-card-search form form--search form--mobile-wrap"
+              >
+                <div class="form__wrapper">
+                  <div class="form__input-wrapper">
+                    <input
+                      type="text"
+                      class="form__input"
+                      placeholder="Search"
+                    />
+                    <button class="form__input-search">
+                      <svg class="form__input-search-icon">
+                        <use xlink:href="/sprite.svg#icon-search"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <button
+                    type="submit"
+                    class="form__button button button--sienna button--big"
+                  >
+                    Find property
+                  </button>
+                </div>
+              </form>
+            </div>
+          </article>
+
+          <div class="main-page__hero-image-container">
+            <img
+              src="./src/assets/images/interior-2.png"
+              alt="house interior"
+              class="main-page__hero-image"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="main-page__how">
+        <div class="main-page__how-wrapper container">
+          <div class="main-page__how-title-bar">
+            <p class="main-page__how-title-bar-caption">
+              As seen on the world's best magazines and media
+            </p>
+            <div class="main-page__how-title-bar-logos">
+              <img
+                src="./src/assets/images/logo-1.png"
+                alt="logo"
+                class="main-page__how-title-bar-logo"
+              />
+              <img
+                src="./src/assets/images/logo-2.png"
+                alt="logo"
+                class="main-page__how-title-bar-logo"
+              />
+              <img
+                src="./src/assets/images/logo-3.png"
+                alt="logo"
+                class="main-page__how-title-bar-logo"
+              />
+              <img
+                src="./src/assets/images/logo-4.png"
+                alt="logo"
+                class="main-page__how-title-bar-logo"
+              />
+              <img
+                src="./src/assets/images/logo-5.png"
+                alt="logo"
+                class="main-page__how-title-bar-logo"
+              />
+            </div>
+          </div>
+
+          <article
+            class="main-page__how-caption content-card content-card--centered"
+          >
+            <div class="content-card__wrapper">
+              <h2 class="content-card__title">How it works</h2>
+              <div class="content-card__content">
+                <p class="content-card__content-text">
+                  Nunc laoreet consequat nunc at consequat. Praesent aliquam mi
+                  id efficitur pellentesque. Maecenas varius felis felis.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <div class="main-page__how-cards card-grid">
+            <div class="card-grid__wrapper">
+              <article class="info-card card-grid__item">
+                <div class="info-card__wrapper">
+                  <div class="infocard__icon">
+                    <div class="icon icon--linen">
+                      <div class="icon__wrapper">
+                        <svg class="icon__image">
+                          <use xlink:href="/sprite.svg#icon-house"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="info-card__title">Find property</h3>
+                  <p class="info-card__content">
+                    Odales mauris quis tellus facilisis, vel mattis magna
+                    interdum. Curabitur eget aliquam elit. In mauris purus,
+                    auctor a eleifend non.
+                  </p>
+                </div>
+              </article>
+
+              <article class="info-card card-grid__item">
+                <div class="info-card__wrapper">
+                  <div class="infocard__icon">
+                    <div class="icon icon--linen">
+                      <div class="icon__wrapper">
+                        <svg class="icon__image">
+                          <use xlink:href="/sprite.svg#icon-house"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="info-card__title">Make a deal</h3>
+                  <p class="info-card__content">
+                    Pellentesque suscipit mauris. Nam dictum, erat a volutpat
+                    varius, urna nisi sollicitudin orci, sagittis facilisis odio
+                    tortor ac mi.
+                  </p>
+                </div>
+              </article>
+
+              <article class="info-card card-grid__item">
+                <div class="info-card__wrapper">
+                  <div class="infocard__icon">
+                    <div class="icon icon--linen">
+                      <div class="icon__wrapper">
+                        <svg class="icon__image">
+                          <use xlink:href="/sprite.svg#icon-house"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="info-card__title">Get your keys</h3>
+                  <p class="info-card__content">
+                    Nulla vel bibendum purus. Etiam tempus quam vel pulvinar
+                    rutrum. Duis semper, metus vitae fermentum consequat.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-page__benefits">
+        <div class="main-page__benefits-wrapper container">
+          <div class="main-page__benefits-row">
+            <div class="main-page__benefits-col">
+              <article class="main-page__benefits-card content-card">
+                <div class="content-card__wrapper">
+                  <div class="content-card__pill pill">
+                    <div class="pill__wrapper">
+                      <p class="pill__text">Comfort first</p>
+                    </div>
+                  </div>
+                  <h2 class="content-card__title">
+                    The best houses for family comfort
+                  </h2>
+                  <div class="content-card__content">
+                    <p class="content-card__content-text">
+                      Ectus ipsum faucibus justo, et semper quam nisl in nibh.
+                      Proin sollicitudin, lorem non posuere blandit.
+                    </p>
+                  </div>
+                </div>
+              </article>
+              <div class="buttons-pair">
+                <a href="#" class="button button--white">
+                  Explore properties
+                </a>
+                <a href="#" class="button button--icon button--plain">
+                  <span>Contact agent</span>
+                  <svg class="button__icon button__icon--small">
+                    <use xlink:href="/sprite.svg#icon-chevron"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="main-page__benefits-col">
+              <article class="img-card">
+                <div class="img-card__wrapper">
+                  <img
+                    src="./src/assets/images/interior-1.png"
+                    alt="home interior"
+                    class="img-card__image"
+                  />
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="main-page__benefits-row main-page__benefits-row--reverse">
+            <div class="main-page__benefits-col">
+              <article class="content-card">
+                <div class="content-card__wrapper">
+                  <div class="content-card__pill pill">
+                    <div class="pill__wrapper">
+                      <p class="pill__text">Quick and easy</p>
+                    </div>
+                  </div>
+                  <h2 class="content-card__title">Fast forward process</h2>
+                  <div class="content-card__content">
+                    <p class="content-card__content-text">
+                      Ut vitae nisi eu nisi maximus condimentum ac id purus.
+                      Duis sit amet mi arcu praesent nec felis nisl.
+                    </p>
+                  </div>
+                </div>
+              </article>
+              <div class="main-page__benefits-features">
+                <article class="info-card info-card--flat">
+                  <div class="info-card__wrapper">
+                    <div class="infocard__icon">
+                      <div class="icon icon--linen">
+                        <div class="icon__wrapper">
+                          <svg class="icon__image">
+                            <use xlink:href="/sprite.svg#icon-house"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <h3 class="info-card__title">Affordable prices</h3>
+                    <p class="info-card__content">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Suspendisse varius enim in eros.
+                    </p>
+                  </div>
+                </article>
+                <article class="info-card info-card--flat">
+                  <div class="info-card__wrapper">
+                    <div class="infocard__icon">
+                      <div class="icon icon--linen">
+                        <div class="icon__wrapper">
+                          <svg class="icon__image">
+                            <use xlink:href="/sprite.svg#icon-sheet"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <h3 class="info-card__title">Less paper work</h3>
+                    <p class="info-card__content">
+                      Curabitur porta luctus semper donec eget lobortis leo ac
+                      finibus nisi.
+                    </p>
+                  </div>
+                </article>
+              </div>
+              <div class="buttons-pair">
+                <a href="#" class="button button--white">
+                  Explore properties
+                </a>
+                <a href="#" class="button button--icon button--plain">
+                  <span>Contact agent</span>
+                  <svg class="button__icon button__icon--small">
+                    <use xlink:href="/sprite.svg#icon-chevron"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="main-page__benefits-col">
+              <article class="img-card">
+                <div class="img-card__wrapper">
+                  <img
+                    src="./src/assets/images/interior-3.png"
+                    alt="home interior"
+                    class="img-card__image"
+                  />
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-page__listings">
+        <div class="main-page__listings-wrapper container">
+          <img
+            src="./src/assets/images/bg-shape-1.png"
+            alt="background shape"
+            class="main-page__listings-shape main-page__listings-shape--top"
+          />
+          <img
+            src="./src/assets/images/bg-shape-1.png"
+            alt="background shape"
+            class="main-page__listings-shape main-page__listings-shape--bottom"
+          />
+
+          <div class="main-page__listings-header">
+            <div class="main-page__listings-pill pill">
+              <div class="pill__wrapper">
+                <p class="pill__text">Properties</p>
+              </div>
+            </div>
+            <h2 class="main-page__listings-title">
+              Houses in your favorite area
+            </h2>
+          </div>
+
+          <div class="main-page__listings-content card-grid">
+            <div class="card-grid__wrapper">
+              <article class="product-card card-grid__item">
+                <a href="#" class="product-card__link"></a>
+                <div class="product-card__wrapper">
+                  <div class="product-card__photo">
+                    <img
+                      src="./src/assets/images/listing-1.png"
+                      alt="listing photo"
+                      class="product-card__photo-image"
+                    />
+                  </div>
+                  <div class="product-card__content">
+                    <h3 class="product-card__title">
+                      Cozy studio in Los Angeles
+                    </h3>
+                    <p class="product-card__price">$ 1,200.00 USD</p>
+                    <p class="product-card__address">
+                      <svg class="product-card__address-icon">
+                        <use xlink:href="/sprite.svg#icon-pin"></use>
+                      </svg>
+                      <span> 2263 Southlea, Los Angeles </span>
+                    </p>
+                    <ul class="product-card__details">
+                      <li class="product-card__details-item">
+                        <svg class="product-card__details-item-icon">
+                          <use xlink:href="/sprite.svg#icon-bath"></use>
+                        </svg>
+                        <span> 2 </span>
+                      </li>
+                      <li class="product-card__details-item">
+                        <svg class="product-card__details-item-icon">
+                          <use xlink:href="/sprite.svg#icon-bed"></use>
+                        </svg>
+                        <span> 2 </span>
+                      </li>
+                      <li class="product-card__details-item">
+                        <svg class="product-card__details-item-icon">
+                          <use xlink:href="/sprite.svg#icon-ruler"></use>
+                        </svg>
+                        <span> 840 sqft </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+
+              <article class="product-card card-grid__item">
+                <a href="#" class="product-card__link"></a>
+                <div class="product-card__wrapper">
+                  <div class="product-card__photo">
+                    <img
+                      src="./src/assets/images/listing-2.png"
+                      alt="listing photo"
+                      class="product-card__photo-image"
+                    />
+                  </div>
+                  <div class="product-card__content">
+                    <h3 class="product-card__title">Tiny home in San Diego</h3>
+                    <p class="product-card__price">$ 740,000.00 USD</p>
+                    <p class="product-card__address">
+                      <svg class="product-card__address-icon">
+                        <use xlink:href="/sprite.svg#icon-pin"></use>
+                      </svg>
+                      <span> 2569 El Segundo, San Diego </span>
+                    </p>
+                    <ul class="product-card__details">
+                      <li class="product-card__details-item">
+                        <svg class="product-card__details-item-icon">
+                          <use xlink:href="/sprite.svg#icon-bath"></use>
+                        </svg>
+                        <span> 1 </span>
+                      </li>
+                      <li class="product-card__details-item">
+                        <svg class="product-card__details-item-icon">
+                          <use xlink:href="/sprite.svg#icon-bed"></use>
+                        </svg>
+                        <span> 2 </span>
+                      </li>
+                      <li class="product-card__details-item">
+                        <svg class="product-card__details-item-icon">
+                          <use xlink:href="/sprite.svg#icon-ruler"></use>
+                        </svg>
+                        <span> 400 sqft </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+
+              <article class="product-card card-grid__item">
+                <a href="#" class="product-card__link"></a>
+                <div class="product-card__wrapper">
+                  <div class="product-card__photo">
+                    <img
+                      src="./src/assets/images/listing-3.png"
+                      alt="listing photo"
+                      class="product-card__photo-image"
+                    />
+                  </div>
+                  <div class="product-card__content">
+                    <h3 class="product-card__title">Crown house in New York</h3>
+                    <p class="product-card__price">$ 980,000.00 USD</p>
+                    <p class="product-card__address">
+                      <svg class="product-card__address-icon">
+                        <use xlink:href="/sprite.svg#icon-pin"></use>
+                      </svg>
+                      <span> 4489 Smity Fielda, New York </span>
+                    </p>
+                    <ul class="product-card__details">
+                      <li class="product-card__details-item">
+                        <svg class="product-card__details-item-icon">
+                          <use xlink:href="/sprite.svg#icon-bath"></use>
+                        </svg>
+                        <span> 2 </span>
+                      </li>
+                      <li class="product-card__details-item">
+                        <svg class="product-card__details-item-icon">
+                          <use xlink:href="/sprite.svg#icon-bed"></use>
+                        </svg>
+                        <span> 4 </span>
+                      </li>
+                      <li class="product-card__details-item">
+                        <svg class="product-card__details-item-icon">
+                          <use xlink:href="/sprite.svg#icon-ruler"></use>
+                        </svg>
+                        <span> 3200 sqft </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+
+              <article class="product-card card-grid__item">
+                <a href="#" class="product-card__link"></a>
+                <div class="product-card__wrapper">
+                  <div class="product-card__photo">
+                    <img
+                      src="./src/assets/images/listing-4.png"
+                      alt="listing photo"
+                      class="product-card__photo-image"
+                    />
+                  </div>
+                  <div class="product-card__content">
+                    <h3 class="product-card__title">
+                      Family house in Los Angeles
+                    </h3>
+                    <p class="product-card__price">$ 4,200.00 USD</p>
+                    <p class="product-card__address">
+                      <svg class="product-card__address-icon">
+                        <use xlink:href="/sprite.svg#icon-pin"></use>
+                      </svg>
+                      <span> 2263 Southlea, Los Angeles </span>
+                    </p>
+                    <ul class="product-card__details">
+                      <li class="product-card__details-item">
+                        <svg class="product-card__details-item-icon">
+                          <use xlink:href="/sprite.svg#icon-bath"></use>
+                        </svg>
+                        <span> 2 </span>
+                      </li>
+                      <li class="product-card__details-item">
+                        <svg class="product-card__details-item-icon">
+                          <use xlink:href="/sprite.svg#icon-bed"></use>
+                        </svg>
+                        <span> 3 </span>
+                      </li>
+                      <li class="product-card__details-item">
+                        <svg class="product-card__details-item-icon">
+                          <use xlink:href="/sprite.svg#icon-ruler"></use>
+                        </svg>
+                        <span> 1400 sqft </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+
+              <article class="product-card card-grid__item">
+                <a href="#" class="product-card__link"></a>
+                <div class="product-card__wrapper">
+                  <div class="product-card__photo">
+                    <img
+                      src="./src/assets/images/listing-5.png"
+                      alt="listing photo"
+                      class="product-card__photo-image"
+                    />
+                  </div>
+                  <div class="product-card__content">
+                    <h3 class="product-card__title">Studio in Las Vegas</h3>
+                    <p class="product-card__price">$ 820,000.00 USD</p>
+                    <p class="product-card__address">
+                      <svg class="product-card__address-icon">
+                        <use xlink:href="/sprite.svg#icon-pin"></use>
+                      </svg>
+                      <span> 2569 Halls Corner, Las Vegas </span>
+                    </p>
+                    <ul class="product-card__details">
+                      <li class="product-card__details-item">
+                        <svg class="product-card__details-item-icon">
+                          <use xlink:href="/sprite.svg#icon-bath"></use>
+                        </svg>
+                        <span> 2 </span>
+                      </li>
+                      <li class="product-card__details-item">
+                        <svg class="product-card__details-item-icon">
+                          <use xlink:href="/sprite.svg#icon-bed"></use>
+                        </svg>
+                        <span> 3 </span>
+                      </li>
+                      <li class="product-card__details-item">
+                        <svg class="product-card__details-item-icon">
+                          <use xlink:href="/sprite.svg#icon-ruler"></use>
+                        </svg>
+                        <span> 2400 sqft </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+
+              <article class="product-card card-grid__item">
+                <a href="#" class="product-card__link"></a>
+                <div class="product-card__wrapper">
+                  <div class="product-card__photo">
+                    <img
+                      src="./src/assets/images/listing-6.png"
+                      alt="listing photo"
+                      class="product-card__photo-image"
+                    />
+                  </div>
+                  <div class="product-card__content">
+                    <h3 class="product-card__title">San Diego story</h3>
+                    <p class="product-card__price">$ 3,700.00 USD</p>
+                    <p class="product-card__address">
+                      <svg class="product-card__address-icon">
+                        <use xlink:href="/sprite.svg#icon-pin"></use>
+                      </svg>
+                      <span> 2569 El Segundo, San Diego </span>
+                    </p>
+                    <ul class="product-card__details">
+                      <li class="product-card__details-item">
+                        <svg class="product-card__details-item-icon">
+                          <use xlink:href="/sprite.svg#icon-bath"></use>
+                        </svg>
+                        <span> 1 </span>
+                      </li>
+                      <li class="product-card__details-item">
+                        <svg class="product-card__details-item-icon">
+                          <use xlink:href="/sprite.svg#icon-bed"></use>
+                        </svg>
+                        <span> 2 </span>
+                      </li>
+                      <li class="product-card__details-item">
+                        <svg class="product-card__details-item-icon">
+                          <use xlink:href="/sprite.svg#icon-ruler"></use>
+                        </svg>
+                        <span> 650 sqft </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="buttons-pair">
+            <a href="#" class="button button--white"> Explore properties </a>
+            <a href="#" class="button button--icon button--plain">
+              <span>Contact agent</span>
+              <svg class="button__icon button__icon--small">
+                <use xlink:href="/sprite.svg#icon-chevron"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-page__locations">
+        <div class="main-page__locations-wrapper container">
+          <article
+            class="main-page__locations-header content-card content-card--centered"
+          >
+            <div class="content-card__wrapper">
+              <h2 class="content-card__title">Locations</h2>
+              <div class="content-card__content">
+                <p class="content-card__content-text">
+                  Nunc mi ante, fringilla eget iaculis et, maximus vel purus
+                  integer lacus urna, aliquet non nisl sit amet.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <div class="main-page__locations-cards card-grid">
+            <div class="card-grid__wrapper">
+              <article class="link-card card-grid__item">
+                <div class="link-card__wrapper">
+                  <h3 class="link-card__title">San Francisco, CA</h3>
+                  <a
+                    href="#"
+                    class="link-card__link button button--icon button--plain"
+                  >
+                    <span>View Properties</span>
+                    <svg class="button__icon button__icon--small">
+                      <use xlink:href="/sprite.svg#icon-chevron"></use>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+
+              <article class="link-card card-grid__item">
+                <div class="link-card__wrapper">
+                  <h3 class="link-card__title">Los Angeles, CA</h3>
+                  <a
+                    href="#"
+                    class="link-card__link button button--icon button--plain"
+                  >
+                    <span>View Properties</span>
+                    <svg class="button__icon button__icon--small">
+                      <use xlink:href="/sprite.svg#icon-chevron"></use>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+
+              <article class="link-card card-grid__item">
+                <div class="link-card__wrapper">
+                  <h3 class="link-card__title">San Diego, CA</h3>
+                  <a
+                    href="#"
+                    class="link-card__link button button--icon button--plain"
+                  >
+                    <span>View Properties</span>
+                    <svg class="button__icon button__icon--small">
+                      <use xlink:href="/sprite.svg#icon-chevron"></use>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+
+              <article class="link-card card-grid__item">
+                <div class="link-card__wrapper">
+                  <h3 class="link-card__title">New York, NY</h3>
+                  <a
+                    href="#"
+                    class="link-card__link button button--icon button--plain"
+                  >
+                    <span>View Properties</span>
+                    <svg class="button__icon button__icon--small">
+                      <use xlink:href="/sprite.svg#icon-chevron"></use>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+
+              <article class="link-card card-grid__item">
+                <div class="link-card__wrapper">
+                  <h3 class="link-card__title">Las Vegas, NV</h3>
+                  <a
+                    href="#"
+                    class="link-card__link button button--icon button--plain"
+                  >
+                    <span>View Properties</span>
+                    <svg class="button__icon button__icon--small">
+                      <use xlink:href="/sprite.svg#icon-chevron"></use>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+
+              <article class="link-card card-grid__item">
+                <div class="link-card__wrapper">
+                  <h3 class="link-card__title">Miami, FL</h3>
+                  <a
+                    href="#"
+                    class="link-card__link button button--icon button--plain"
+                  >
+                    <span>View Properties</span>
+                    <svg class="button__icon button__icon--small">
+                      <use xlink:href="/sprite.svg#icon-chevron"></use>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="buttons-pair">
+            <a href="#" class="button button--white"> Explore properties </a>
+            <a href="#" class="button button--icon button--plain">
+              <span>Contact agent</span>
+              <svg class="button__icon button__icon--small">
+                <use xlink:href="/sprite.svg#icon-chevron"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-page__get-started">
+        <div class="main-page__get-started-wrapper container">
+          <div class="main-page__get-started-block">
+            <div class="main-page__get-started-icon icon icon--white">
+              <div class="icon__wrapper">
+                <svg class="icon__image">
+                  <use xlink:href="/sprite.svg#icon-family"></use>
+                </svg>
+              </div>
+            </div>
+            <h2 class="main-page__get-started-title">
+              Families are our priority
+            </h2>
+            <p class="main-page__get-started-content">
+              Curabitur eget aliquam elit. In mauris purus, auctor a eleifend
+              non, placerat vel arcu. In non consectetur lorem. Morbi non varius
+              sapien suscipit mauri.
+            </p>
+            <button
+              type="button"
+              class="main-page__get-started-button button button--sienna"
+            >
+              Get Started
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-page__testimonial">
+        <div class="main-page__testimonial-wrapper container">
+          <article
+            class="main-page__locations-header content-card content-card--centered"
+          >
+            <div class="content-card__wrapper">
+              <h2 class="content-card__title">What customers say</h2>
+              <div class="content-card__content">
+                <p class="content-card__content-text">
+                  Faucibus orci luctus et ultrices posuere cubilia curae.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <div class="main-page__testimonial-cards card-grid">
+            <div class="card-grid__wrapper">
+              <article class="review-card card-grid__item">
+                <div class="review-card__wrapper">
+                  <div class="review-card__stars">
+                    <svg class="review-card__star">
+                      <use xlink:href="/sprite.svg#icon-star"></use>
+                    </svg>
+                    <svg class="review-card__star">
+                      <use xlink:href="/sprite.svg#icon-star"></use>
+                    </svg>
+                    <svg class="review-card__star">
+                      <use xlink:href="/sprite.svg#icon-star"></use>
+                    </svg>
+                    <svg class="review-card__star">
+                      <use xlink:href="/sprite.svg#icon-star"></use>
+                    </svg>
+                    <svg class="review-card__star">
+                      <use xlink:href="/sprite.svg#icon-star"></use>
+                    </svg>
+                  </div>
+                  <p class="review-card__review">
+                    "Aliquam erat volutpat. Nulla pretium nec urna et convallis.
+                    Ut varius mi lacus, nec molestie libero ultricies nec.
+                    Aenean lacinia dui elit, ut gravida quam"
+                  </p>
+                  <div class="review-card__user user">
+                    <div class="user__wrapper">
+                      <div class="user__userpic">
+                        <img
+                          src="./src/assets/images/user-webb.png"
+                          alt="userpic"
+                          class="user__userpic-image"
+                        />
+                      </div>
+                      <div class="user__info">
+                        <p class="user__name">Michael Webb</p>
+                        <p class="user__title">Customer</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="review-card card-grid__item">
+                <div class="review-card__wrapper">
+                  <div class="review-card__stars">
+                    <svg class="review-card__star">
+                      <use xlink:href="/sprite.svg#icon-star"></use>
+                    </svg>
+                    <svg class="review-card__star">
+                      <use xlink:href="/sprite.svg#icon-star"></use>
+                    </svg>
+                    <svg class="review-card__star">
+                      <use xlink:href="/sprite.svg#icon-star"></use>
+                    </svg>
+                    <svg class="review-card__star">
+                      <use xlink:href="/sprite.svg#icon-star"></use>
+                    </svg>
+                    <svg class="review-card__star">
+                      <use xlink:href="/sprite.svg#icon-star"></use>
+                    </svg>
+                  </div>
+                  <p class="review-card__review">
+                    "Class aptent taciti sociosqu ad litora torquent per conubia
+                    nostra, per inceptos himenaeos. Morbi pretium iaculis
+                    ultricies. Aenean in leo vitae tortor."
+                  </p>
+                  <div class="review-card__user user">
+                    <div class="user__wrapper">
+                      <div class="user__userpic">
+                        <img
+                          src="./src/assets/images/user-amber.png"
+                          alt="userpic"
+                          class="user__userpic-image"
+                        />
+                      </div>
+                      <div class="user__info">
+                        <p class="user__name">Amber Keene</p>
+                        <p class="user__title">Customer</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="review-card card-grid__item">
+                <div class="review-card__wrapper">
+                  <div class="review-card__stars">
+                    <svg class="review-card__star">
+                      <use xlink:href="/sprite.svg#icon-star"></use>
+                    </svg>
+                    <svg class="review-card__star">
+                      <use xlink:href="/sprite.svg#icon-star"></use>
+                    </svg>
+                    <svg class="review-card__star">
+                      <use xlink:href="/sprite.svg#icon-star"></use>
+                    </svg>
+                    <svg class="review-card__star">
+                      <use xlink:href="/sprite.svg#icon-star"></use>
+                    </svg>
+                    <svg class="review-card__star">
+                      <use xlink:href="/sprite.svg#icon-star"></use>
+                    </svg>
+                  </div>
+                  <p class="review-card__review">
+                    "Condimentum viverra orci. Pellentesque suscipit odio nisl,
+                    non ultricies purus mattis eget. In placerat, lorem a
+                    sodales ullamcorper, eros nibh laoreet nisl."
+                  </p>
+                  <div class="review-card__user user">
+                    <div class="user__wrapper">
+                      <div class="user__userpic">
+                        <img
+                          src="./src/assets/images/user-sarah.png"
+                          alt="userpic"
+                          class="user__userpic-image"
+                        />
+                      </div>
+                      <div class="user__info">
+                        <p class="user__name">Sarah Tarleton</p>
+                        <p class="user__title">Customer</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-page__posts">
+        <div class="main-page__posts-wrapper container">
+          <article
+            class="main-page__posts-header content-card content-card--link"
+          >
+            <div class="content-card__wrapper">
+              <div class="content-card__pill pill">
+                <div class="pill__wrapper">
+                  <p class="pill__text">Blog</p>
+                </div>
+              </div>
+              <h2 class="content-card__title">Latest posts</h2>
+              <div class="content-card__content">
+                <p class="content-card__content-text">
+                  Vestibulum ante ipsum primis in faucibus orci luctus et
+                  ultrices posuere cubilia curae. Praesent efficitur nibh massa
+                  morbi sagittis ornare dui in ornare.
+                </p>
+                <a
+                  href="#"
+                  class="content-card__content-button button button--white"
+                >
+                  View all
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <div class="main-page__posts-cards card-grid">
+            <div class="card-grid__wrapper">
+              <article class="product-card product-card--post card-grid__item">
+                <a href="#" class="product-card__link"></a>
+                <div class="product-card__wrapper">
+                  <div class="product-card__photo">
+                    <img
+                      src="./src/assets/images/listing-1.png"
+                      alt="listing photo"
+                      class="product-card__photo-image"
+                    />
+                  </div>
+                  <div class="product-card__content">
+                    <div class="product-card__header">
+                      <div class="pill pill--linen">
+                        <div class="pill__wrapper">
+                          <p class="pill__text">Trends</p>
+                        </div>
+                      </div>
+                      <p class="product-card__date">May 10, 2022</p>
+                    </div>
+                    <h3 class="product-card__title">
+                      The 9 best homes in New York
+                    </h3>
+                    <p class="product-card__desc">
+                      Integer tincidunt rutrum faucibus. Proin sit amet varius
+                      arcu. Aliquam vel leo augue donec. Lorem ipsum dolor sit
+                      amet consectetur adipisicing elit.
+                    </p>
+                    <button
+                      type="button"
+                      class="product-card__button button button--icon button--plain button--bold"
+                    >
+                      <span>Read more</span>
+                      <svg class="button__icon button__icon--small">
+                        <use xlink:href="/sprite.svg#icon-chevron"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </article>
+
+              <article class="product-card product-card--post card-grid__item">
+                <a href="#" class="product-card__link"></a>
+                <div class="product-card__wrapper">
+                  <div class="product-card__photo">
+                    <img
+                      src="./src/assets/images/listing-2.png"
+                      alt="listing photo"
+                      class="product-card__photo-image"
+                    />
+                  </div>
+                  <div class="product-card__content">
+                    <div class="product-card__header">
+                      <div class="pill pill--linen">
+                        <div class="pill__wrapper">
+                          <p class="pill__text">DIY</p>
+                        </div>
+                      </div>
+                      <p class="product-card__date">May 10, 2022</p>
+                    </div>
+                    <h3 class="product-card__title">
+                      How to easily buy a house with Realco
+                    </h3>
+                    <p class="product-card__desc">
+                      Praesent nec felis nisl. Phasellus eget lacus a metus
+                      fringilla fermentum sit amet.
+                    </p>
+                    <button
+                      type="button"
+                      class="product-card__button button button--icon button--plain button--bold"
+                    >
+                      <span>Read more</span>
+                      <svg class="button__icon button__icon--small">
+                        <use xlink:href="/sprite.svg#icon-chevron"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </article>
+
+              <article class="product-card product-card--post card-grid__item">
+                <a href="#" class="product-card__link"></a>
+                <div class="product-card__wrapper">
+                  <div class="product-card__photo">
+                    <img
+                      src="./src/assets/images/listing-3.png"
+                      alt="listing photo"
+                      class="product-card__photo-image"
+                    />
+                  </div>
+                  <div class="product-card__content">
+                    <div class="product-card__header">
+                      <div class="pill pill--linen">
+                        <div class="pill__wrapper">
+                          <p class="pill__text">DIY</p>
+                        </div>
+                      </div>
+                      <p class="product-card__date">May 10, 2022</p>
+                    </div>
+                    <h3 class="product-card__title">
+                      Renting houses - complete guide
+                    </h3>
+                    <p class="product-card__desc">
+                      Nunc in bibendum leo, gravida scelerisque quam nulla
+                      interdum tellus a turpis.
+                    </p>
+                    <button
+                      type="button"
+                      class="product-card__button button button--icon button--plain button--bold"
+                    >
+                      <span>Read more</span>
+                      <svg class="button__icon button__icon--small">
+                        <use xlink:href="/sprite.svg#icon-chevron"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="default-view__footer footer">
+      <div class="footer__wrapper container">
+        <div class="footer__content">
+          <div class="footer__logo logo logo--no-hover">
+            <div class="logo__wrapper">
+              <svg class="logo__brand-logo">
+                <use xlink:href="/sprite.svg#icon-brand-logo"></use>
+              </svg>
+              <svg class="logo__brand">
+                <use xlink:href="/sprite.svg#icon-brand"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="footer__links">
+            <div class="footer__links-col">
+              <div class="sub-menu">
+                <div class="sub-menu__wrapper">
+                  <h4 class="sub-menu__title">Pages</h4>
+                  <ul class="sub-menu__items">
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__item-link">Home</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__item-link">About</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__item-link">Blog</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__item-link">Agents</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__item-link">Contact</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__item-link">FAQs</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__item-link">Properties</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer__links-col">
+              <div class="sub-menu">
+                <div class="sub-menu__wrapper">
+                  <h4 class="sub-menu__title">CMS Pages</h4>
+                  <ul class="sub-menu__items">
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__item-link">Property</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__item-link"
+                        >Property Single</a
+                      >
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__item-link"
+                        >Blog Categories</a
+                      >
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__item-link">Blog Single</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__item-link">Agent Single</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer__links-col">
+              <div class="sub-menu">
+                <div class="sub-menu__wrapper">
+                  <h4 class="sub-menu__title">Utility Pages</h4>
+                  <ul class="sub-menu__items">
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__item-link">Style Guide</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__item-link">Changelog</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__item-link">Licenses</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__item-link">404</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__item-link">Password</a>
+                    </li>
+                    <li class="sub-menu__item">
+                      <a href="#" class="sub-menu__item-link">Search</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer__subscribe">
+            <h3 class="footer__subscribe-title">Subscribe</h3>
+            <p class="footer__subscribe-subtitle">
+              Join our newsletter to stay up to date on features and releases.
+            </p>
+            <form class="footer__subscribe-form form form--mobile-wrap">
+              <div class="form__wrapper">
+                <input
+                  type="email"
+                  name="email"
+                  class="form__input"
+                  placeholder="Enter your email"
+                /><!-- 
+              --><button
+                  type="submit"
+                  class="form__button button button--sienna button--big"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </form>
+            <p class="footer__subscribe-policy">
+              By subscribing you agree to with our
+              <a class="footer__subscribe-policy-link" href="#"
+                >Privacy Policy</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <div class="footer__bottom-wrapper container">
+            <p class="footer__copyright">
+              © Realco by
+              <a class="footer__copyright-link" href="#">Minimal Square</a>
+            </p>
+            <div class="footer__social">
+              <a href="#" class="footer__social-item">
+                <svg class="footer__social-icon">
+                  <use xlink:href="/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+              <a href="#" class="footer__social-item">
+                <svg class="footer__social-icon">
+                  <use xlink:href="/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+              <a href="#" class="footer__social-item">
+                <svg class="footer__social-icon">
+                  <use xlink:href="/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+              <a href="#" class="footer__social-item">
+                <svg class="footer__social-icon">
+                  <use xlink:href="/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="./src/js/main.ts"></script>
+  </body>
 </html>
