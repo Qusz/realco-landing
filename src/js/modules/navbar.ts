@@ -1,12 +1,13 @@
 import blockScrollY from 'utils/block-scrollY';
-import { getNavbarElements } from './elements-selector';
+import ElementsSelector from './elements-selector';
 
 import TypeGuard from './type-guards';
 
 export default function (): void {
-  const navbarElements = getNavbarElements();
+  const elementsSelector = new ElementsSelector();
   const typeGuard = new TypeGuard();
 
+  const navbarElements = elementsSelector.getNavbarElements();
   const activeClass = 'navbar--mobile';
 
   if (!typeGuard.isNavbarElements(navbarElements)) {
