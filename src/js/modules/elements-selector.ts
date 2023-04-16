@@ -1,4 +1,4 @@
-import { NavbarElements, NotificationElements } from '@/js/types';
+import type { NavbarElements, NotificationElements } from '@/js/types';
 
 export default class ElementsSelector {
   getNavbarElements(): NavbarElements {
